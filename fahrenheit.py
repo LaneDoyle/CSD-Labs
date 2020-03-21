@@ -8,4 +8,4 @@ fahrenheit = float(input("How many degrees is it in fahrenheit? "))
 
 celsius = ((fahrenheit - 32) * 5) / 9
 
-print("Celsius ", celsius)
+print("Celsius: ", celsius)
