@@ -89,6 +89,12 @@ while done is False:
             print("You feel refreshed.")
             print(" ")
             
+    if miles_traveled >= 200:
+        print(" ")
+        print("You escaped! Congrats!")
+        print(" ")
+        done = True
+            
     if not done and thirst_level > 4:
         print(" ")
         print("You are thirsty!")
@@ -121,10 +127,20 @@ while done is False:
         print(" ")
         print("The natives are getting close!")
         print(" ")
+        
+    percentage = rd.randint(1, 100)  
     
-    if miles_traveled >= 200:
-            print(" ")
-            print("You escaped! Congrats!")
-            print(" ")
-            done = True
-            
+    if not done and percentage <= 20:
+        print(" ")
+        print("You have found an oasis!")
+        print("You are able to refill your canteen.")
+        print("Your camel has rested.")
+        print(" ")
+        camel_exhaustion = 0
+        thirst_level = 0
+        drinks_left += 2
+        
+        
+    
+    
+
